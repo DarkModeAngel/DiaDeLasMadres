@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tarjeta del Día de las Madres</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .card {
+      width: 300px;
+      background-color: #fff;
+      padding: 20px;
+      margin: 50px auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e91e63;
+    }
+
+    p {
+      text-align: center;
+      color: #333;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+      animation: rotateIn 1s ease-in-out;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      background-color: #e91e63;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: bounceIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes rotateIn {
+      0% {
+        transform: rotate(-180deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.1);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Feliz Día de las Madres</h1>
+    <img src="ruta/a/la/imagen.jpg" alt="Imagen del Día de las Madres" class="animate__animated animate__rotateIn">
+    <p>Querida mamá,</p>
+    <p>Gracias por ser una madre maravillosa y por todo tu amor y apoyo. Eres especial y te quiero mucho.</p>
+    <button class="animate__animated animate__bounceIn">Enviar Tarjeta</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".animate__animated").addClass("animate__delay-1s");
+    });
+  </script>
+</body>
+</html>
